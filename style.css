@@ -1,0 +1,283 @@
+*{
+   box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background: #fbe4ba;
+    color: #183f35;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+ img{
+    display: block;
+    width: 80%;
+ }
+ header{background-color: #fffdf8;}
+
+nav{
+    width: 100%;
+    margin: 0 ;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+nav>a:first-child img{
+    width: 90px;
+    height: 90%;
+    object-fit: contain;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+nav a, nav ul a{
+    color: black;
+    font-size: larger;
+}
+nav a{
+    .section-heading a, footer a{
+        color:inherit;
+        text-decoration: none;}
+    }
+    .login-link{
+        padding: 5px 50px;
+        border-radius: 30px;
+    background-color: #17483d;
+    color: #fff;
+   white-space: nowrap;
+    }
+    
+    .button{
+display: inline-block;
+padding: 15px 28px;
+border-radius: 30px;
+background-color: #e78654;
+color: #fff;
+font-weight: bold;
+text-decoration: none;
+    }
+    
+    .hero{
+        padding: 65px 8%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+gap: 60px;
+background: #fbe4ba;
+    }
+    .hero> div{
+        flex: 1;
+    }
+
+    .hero h1{
+     margin: 0 0 18px;
+     font-size: 48px;  
+     line-height: 1.1; 
+    }
+
+    .hero p {
+        color: #48655b;
+        font-size: 19px;
+    }
+
+.hero img{
+    width: 45%;
+    height: 300px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.Featured{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 75px 30px;
+    text-align: center;
+}
+
+.section-heading{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+}
+.section-heading h2{
+   font-size: 36px;
+}
+.section-heading a{
+    color: #d9774c;
+    font-weight: bold;
+}
+.activity-list{
+    margin: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 24px;
+    text-align: left;
+}
+.activity-card{
+    flex: 1 1 230px;
+    width: 290px;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 8px 25px;
+}
+
+.activity-card img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.activity-card p,
+.activity-card h3,
+.activity-card>a{
+    margin-right: 22px;
+    margin-left: 22px;
+}
+
+.activity-card .activity-details{
+    margin-top: 22px;
+    color: #6a8177;
+    font-size: 14px;
+    font-weight: bold;
+}
+.activity-card h3{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.activity-card> p:not(.activity-details){color: #60746b;}
+.activity-card > a {
+  margin-top: 12px;
+  margin-bottom: 22px;
+  padding: 11px 16px;
+  display: block;
+  border-radius: 24px;
+  background-color: #eaf2ec;
+  color: #17483d;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+.activity-card> a:hover{
+    background-color: #d9e9dd;
+}
+.about {
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    background-color: #eff5ee;
+}
+.about > div{
+    flex: 1;
+}
+.about p{
+    color: #536c62;
+}
+footer{
+    padding: 20px 8% 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+background-color: #17483d;
+color: white;
+}
+footer> div{
+    flex: 1;
+    padding: 0 25px;
+}
+footer h2{
+    font-size: 100%;
+}
+footer a{
+    display: block;
+    margin: 8px 0;
+    color: #d5e4dc;
+}
+footer> p{
+flex-basis: 100%;
+padding-top: 12px;
+border-top: 1px solid #6e968a;
+color: #d5e4dc;
+text-align: center;
+}
+
+/* Smaller screens */
+@media (max-width: 800px) {
+  .hero {
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .about {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  nav ul {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .hero,
+  .about {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero {
+    padding: 45px 24px;
+  }
+
+  .hero img {
+    width: 100%;
+    height: 240px;
+  }
+
+  .featured {
+    padding: 50px 20px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .activity-card {
+    max-width: none;
+  }
+
+  .about {
+    padding: 50px 24px;
+  }
+
+  footer {
+    padding: 40px 24px 20px;
+  }
+}
